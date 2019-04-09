@@ -1,0 +1,7 @@
+cat *_sent.txt | grep  "<<<" | wc -l посчет общего кол-во отправок
+
+cat *_sent.txt | grep  "<<<" -A1 | grep -v '^ ' просмотр юзернэймов которым было отправлено сообщение
+
+cat 23.txt | grep "+" | awk '{print $3}' 
+
+split -l 30  usr.txt
